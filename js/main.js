@@ -150,9 +150,11 @@ function resetBoxes() {
 }
 
 $(document).ready(function ($) {
-    $('#toggle-random').bootstrapToggle();
-    $('#toggle-interval').bootstrapToggle();
-
+    var screen = $(window)
+    if (screen.width() > 380) {
+        $('#toggle-random').bootstrapToggle();
+        $('#toggle-interval').bootstrapToggle();
+    }
 
     changeChord();
     var metronome_on = false;

@@ -185,4 +185,8 @@
         bottom: 1vh;
         left: 30vw;
     }
+
+    .navbar-brand{
+        display: none;
+    }
 }

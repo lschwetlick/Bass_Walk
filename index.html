@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BassWalk</title>
+
+    <!-- CSS styles -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/font-awesome-4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+    <!-- <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet"> -->
+    <!-- Javascripts -->
+    <script src="js/jquery.min.js"></script>
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+
+    <script src="js/main.js"></script>
+    <!-- <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script> -->
+
+</head>
+
+<body id="home">
+    <nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
+        <div class="navbar-brand stylish">BassWalk</div>
+
+        <input id="toggle-random" class="nav_btns" checked type="checkbox" data-on="Random" data-off="Predefined">
+        <input id="toggle-interval" class="nav_btns" checked type="checkbox" data-on="Interval" data-off="Just Direction">
+        <!-- <input id="toggle-chords" checked type="checkbox" data-on="Chords" data-off="Notes"> -->
+
+        <input type="number" class="nav_btns" id="bpm_input" name="bpm_input" min="10" max="100" value="100">
+        <button id="onoff" class="nav_btns">Start</button>
+    </nav>
+    <div id="things">
+        <div class="center_chord_boxes">
+            <div class="chord_box" , id="current_chord_box">
+                <div class="box_title">current</div>
+                <div id="current_chord_symbol" , class="chord_symbol">Em</div>
+
+                <div id="current_interval" , class="interval">Q</div>
+                <i id="current_arrow" , class="fa fa-arrow-up"></i>
+            </div>
+            <div class="chord_box" , id="next_chord_box">
+                <div class="box_title">coming up</div>
+                <div id="next_chord_symbol" , class="chord_symbol">A</div>
+                <div id="next_interval" , class="interval">T</div>
+                <i id="next_arrow" , class="fa fa-arrow-up"></i>
+            </div>
+        </div>
+        <!-- <i class="fa fa-arrow-down"></i> -->
+
+        <div id="beat_indicator">
+            <div id="box1" , class="boxes"></div>
+            <div id="box2" , class="boxes"></div>
+            <div id="box3" , class="boxes"></div>
+            <div id="box4" , class="boxes"></div>
+        </div>
+
+        <div id="chord_seq">
+            <textarea id="chord_seq_box" rows="4" cols="50">
+                Chord sequence to loop, separated by commas
+            </textarea>
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>

@@ -5,7 +5,7 @@
     margin:0 auto;
     position:absolute;
     left:20vw;
-    top:25vh;
+    top:35vh;
 }
 
 .chord_box{
@@ -15,6 +15,10 @@
     border-width: thick;
     text-align: center;
     padding: 1%;
+    min-width: 200px;
+    min-height: 200px;
+    max-width: 400px;
+    max-height: 400px;
 }
 
 #current_chord_box{
@@ -82,14 +86,12 @@
     left: 40vw;
 }
 
-
-
-
 .box_title{
     position: relative;
-    top: -8vh;
+    top: -10rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 500%;
+    white-space: nowrap;
 }
 
 #chord_seq{
@@ -136,12 +138,12 @@
 
     #current_chord_box{
         float: none;
-        width: 30vh;
+        width: 30vw;
     }
 
     #next_chord_box{
         float: none;
-        width: 20vh;
+        width: 20vw;
     }
     .chord_symbol{
         font-size: 300%;
@@ -162,8 +164,12 @@
         font-size: 200%;
         top: -6vh;
     }
-#things{
-    margin-top: 15vh;
-}
+    #things{
+        margin-top: 15vh;
+    }
+    .center_chord_boxes{
+        top: 18vh;
+        height: auto
+    }
 
 }

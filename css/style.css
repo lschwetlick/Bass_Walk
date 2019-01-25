@@ -173,3 +173,16 @@
     }
 
 }
+
+@media screen and (max-width:400px){
+    .chord_box{
+        margin-bottom: 1vh;
+        margin-top: 6vh;
+        min-width: 120px;
+        min-height: 120px;
+    }
+    #beat_indicator{
+        bottom: 1vh;
+        left: 30vw;
+    }
+}

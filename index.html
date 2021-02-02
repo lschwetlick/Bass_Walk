@@ -7,10 +7,9 @@
     <title>BassWalk</title>
 
     <!-- CSS styles -->
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="lib/font-awesome-4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
-    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
     <!-- Javascripts -->
     <script src="js/jquery.min.js"></script>
     <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
@@ -18,7 +17,7 @@
 
     <script src="js/main.js"></script>
     <!-- <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script> -->
-
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body id="home">
@@ -26,7 +25,8 @@
         <div class="navbar-brand stylish">BassWalk</div>
 
         <input id="toggle-random" class="nav_btns" checked type="checkbox" data-on="Random" data-off="Predefined">
-        <input id="toggle-interval" class="nav_btns" checked type="checkbox" data-on="Interval" data-off="Just Direction">
+        <input id="toggle-interval" class="nav_btns" checked type="checkbox" data-on="Interval"
+            data-off="Just Direction">
         <!-- <input id="toggle-chords" checked type="checkbox" data-on="Chords" data-off="Notes"> -->
 
         <input type="number" class="nav_btns" id="bpm_input" name="bpm_input" min="10" max="100" value="100">
@@ -65,6 +65,52 @@
 
     </div>
 
+    <div class="container">
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">What is
+            this?</button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">BassWalk</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            This is a tool made for (but not limited to) practicing walking bass lines. I like
+                            challenging myself to combine weird sequences and explore which walks work well.
+                        </p>
+
+                        <p>
+                            First: There is a metronome. The speed can be controlled by entering bpm into the box in the
+                            navigation bar.
+                        </p>
+
+                        <p>
+                            The green box shows the current chord, the red box shows the upcoming chord. Under the chord
+                            name an arrow indicates whether to walk up or down to the next chord. Optionally (flip the
+                            "Interval/Just direction" switch), it can also randomly display a T or Q, showing whether to
+                            make the walk third or fifth based.
+                        </p>
+
+                        <p>
+                            Instead of random chord sequences you can also flip the "random/predefined" switch and
+                            provide a comma separated list of chords to cycle through.
+                        </p>
+
+                        <p>
+                            Want to know more about me? <a href="lisaschwetlick.de">lisaschwetlick.de</a>
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 </body>
